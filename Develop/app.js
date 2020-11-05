@@ -15,10 +15,10 @@ $(document).ready(function () {
         console.log(currentTime)
         console.log(hour)
 
-        if (currentTime > hour + 3) {
+        if (currentTime > hour) {
             $(`#row${hour}`).addClass("bg-danger text-light")
             $(`#${hour}`).attr("disabled", true)
-        } else if (currentTime === hour + 3) {
+        } else if (currentTime === hour) {
             $(`#row${hour}`).addClass("bg-secondary text-light")
         } else {
             $(`#row${hour}`).addClass("bg-success text-light")
